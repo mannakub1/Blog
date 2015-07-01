@@ -1,0 +1,17 @@
+<table class="table table-striped table-hover table-bordered ">
+	<thead>
+		<tr>
+			<th>User Name</th>
+			<th>Date Create</th>
+		</tr>
+	</thead>
+	<tbody>
+	<%= @users.each do |user| %>
+		<tr>
+			<td><%= link_to user.username , user_path(user) %></td>
+			<td><%= user.created_at %></td>
+		</tr>
+		<%end%>
+	</tbody>
+</table>
+<a href="<%= new_user_path%>"><button type="button" class="btn btn-default">Create User</button></a>

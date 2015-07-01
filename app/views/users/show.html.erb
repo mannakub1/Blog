@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-lg-12 ">
+		<h1>Profile</h1>
+	</div>
+</div>	
+<div class="row">
+	<div class="col-lg-2 col-lg-offset-0.5">
+		<h4>User Name : </h4>
+	</div>
+	<div class="col-lg-1">
+		<h4><%= @user.username %> </h4>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-2">
+		<h4>Email Adderss : </h4>
+	</div>
+	<div class="col-lg-1">
+		<h4><%= @user.email %></h4>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-2">
+		<h4>Password: </h4>
+	</div>
+	<div class="col-lg-1">
+		<h4><%= link_to 'ChangPassword', users_path%></h4>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-2">
+		<h4>Age: </h4>
+	</div>
+	<div class="col-lg-1">
+		<h4><%= @user.age %></h4>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-2">
+		<h4>Gender: </h4>
+	</div>
+	<div class="col-lg-1">
+		<h4><%= @user.gender %></h4>
+	</div>
+</div>
+<a href="<%= users_path%>"><button type="button" class="btn btn-default">Back</button></a>
