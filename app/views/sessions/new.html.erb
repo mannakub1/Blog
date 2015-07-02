@@ -1,0 +1,22 @@
+<%= form_for(:session, url: login_path) do |f| %>
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3">
+			<%= f.label :User_Name%>
+		</div>
+		<div class="col-lg-5 col-lg-offset-3">
+			<%= f.text_field :username , class: "form-control" %>
+		</div>
+		<div class="col-lg-6 col-lg-offset-3">
+			<%= f.label :Password%>	
+		</div>
+		<div class="col-lg-5 col-lg-offset-3">
+			<%= f.password_field :password , class: "form-control"%>
+		</div>
+	</div>
+<br>
+<div class="row">
+	<div class="col-ld-4 col-lg-offset-3">
+		<%= f.submit "Log in", class: "btn btn-default"%>
+	</div>
+</div>
+<% end %>
